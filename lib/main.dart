@@ -12,13 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Dado",
-      home: Column(
-        children: <Widget>[
-          Text('Olá', style: TextStyle(fontSize: 100)),
-          Text('Usuario', style: TextStyle(fontWeight: FontWeight.normal)),
-          Text('senha', style: TextStyle(color: Colors.green)),
-        ],
-      ),
+      home: Container (color: Colors.blue,
+      child: Row (children: [
+        Text("Oi" , style: TextStyle(fontSize: 100)),
+      ],)),
       theme: ThemeData(
         // This is the theme of your application.
         //
