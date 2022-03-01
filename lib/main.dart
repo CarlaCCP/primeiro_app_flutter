@@ -11,11 +11,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Dado",
-      home: Container (color: Colors.blue,
-      child: Row (children: [
-        Text("Oi" , style: TextStyle(fontSize: 100)),
-      ],)),
+      title: "Botão",
+      home: Container (color: Colors.white,
+      child: Column (children: <Widget> [
+        FlatButton(onPressed: () {
+          print("Botão pressionado");
+          },
+          child: Text("Botão"),)
+      ],)
+      ),
       theme: ThemeData(
         // This is the theme of your application.
         //
